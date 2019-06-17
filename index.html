@@ -1,0 +1,80 @@
+<html doctype="text/html" ;>
+
+<head>
+    <meta charset="utf-8" ;>
+    <meta lang="pl">
+    <meta author="Łukasz Dydek">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        var naszDziad = "Witaj dziadu!!!";
+        function dziad() {
+            document.getElementById("dziad").innerHTML = naszDziad;
+        }
+    </script>
+    <script>
+        function showMenu() {
+            document.getElementById("overlay").style.display = "inherit";
+        }
+    </script>
+    <script>
+        function hideMenu() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <main class="main">
+        <div id="overlay" class="overlay">
+
+            <div class="overlayMenu">
+                <a class="overlayMenuLink" href="#aboutMe" onclick="hideMenu()">O mnie</a>
+                <a class="overlayMenuLink" href="#myServices" onclick="hideMenu()">Usługi</a>
+                <a class="overlayMenuLink" href="#myPricelist" onclick="hideMenu()">Cennik</a>
+                <a class="overlayMenuLink" href="#Contact" onclick="hideMenu()">Kontakt</a>
+            </div>
+
+        </div>
+        
+        
+        <button class="menuButton" type="button" onclick="showMenu()">Menu</button>
+        <br/>
+        <div id="banner"></div>
+
+        <p id="dziad">Witaj!</p> <br>
+
+        <button type="button" onclick="dziad()">Zobacz dziada</button>
+        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <article id="aboutMe">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quam eos praesentium suscipit vitae tempore
+            accusamus voluptate consequuntur omnis hic delectus dolorum quisquam, in tenetur deserunt molestias
+            mollitia, aperiam odit.
+        </article>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <article id="myServices">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quam eos praesentium suscipit vitae tempore
+            accusamus voluptate consequuntur omnis hic delectus dolorum quisquam, in tenetur deserunt molestias
+            mollitia, aperiam odit.
+        </article>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <article id="myPricelist">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quam eos praesentium suscipit vitae tempore
+            accusamus voluptate consequuntur omnis hic delectus dolorum quisquam, in tenetur deserunt molestias
+            mollitia, aperiam odit.
+        </article>
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <article id="Contact">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quam eos praesentium suscipit vitae tempore
+            accusamus voluptate consequuntur omnis hic delectus dolorum quisquam, in tenetur deserunt molestias
+            mollitia, aperiam odit.
+        </article>
+    </main>
+
+</body>
+
+</html>
